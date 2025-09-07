@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Layout Flexbox</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1000px;
+      margin: 20px auto;
+      background: white;
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+
+    .sidebar1, .sidebar2 {
+      width: 20%;
+      padding: 15px;
+      background: #f9f9f9;
+    }
+
+    .sidebar1 {
+      border-right: 1px solid #ddd;
+    }
+
+    .sidebar2 {
+      border-left: 1px solid #ddd;
+    }
+
+    .content {
+      flex: 1;
+      padding: 15px;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    .sidebar1 a {
+      display: block;
+      text-decoration: none;
+      color: purple;
+      margin-bottom: 8px;
+    }
+
+    .sidebar1 a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar1">
+      <h3>Sidebar Satu</h3>
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+      <a href="#">Link 4</a>
+      <a href="#">Link 5</a>
+    </div>
+
+    <div class="content">
+      <h2>Judul Artikel</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+      <p>Nec ullamcorper sit amet risus nullam eget felis eget nunc...</p>
+    </div>
+
+    <div class="sidebar2">
+      <h3>Sidebar Dua</h3>
+      <p>Duis ex mollit tempor. Ad anim reprehenderit in laborum...</p>
+    </div>
+  </div>
+</body>
+</html>
