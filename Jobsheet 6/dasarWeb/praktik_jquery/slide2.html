@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #kotak2, #flip {
+            padding: 5px;
+            text-align: center;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+        #kotak2 {
+         padding: 50px;
+         display: none;
+        }
+    </style>
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+          $("#flip").click(function () {
+              $("#kotak2").slideDown("slow");
+          })
+        });
+    </script>
+</head>
+
+<body>
+ <div id="flip"> Klik untuk Efek SlideDown</div>
+ <div id="kotak2">Selamat Pagi</div>
+
+</body>
+
+</html>

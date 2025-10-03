@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum Minggu ke-4 JQuery</title>
+    <style>
+        #paragrafF {
+            width: 600px;
+            height: 80px;
+            background-color: pink;
+            line-height: 80px;
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+
+    <!-- jQuery versi terbaru -->
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Klik → ubah warna teks jadi putih
+            $("#paragrafF").click(function () {
+                $(this).css("color", "white");
+            });
+
+            // Mouseover → ubah background jadi silver
+            $("#paragrafF").mouseover(function () {
+                $(this).css("background-color", "silver");
+            });
+
+            // Mouseout → ubah background jadi biru
+            $("#paragrafF").mouseout(function () {
+                $(this).css("background-color", "blue");
+            });
+
+            // Double click → kasih border hitam
+            $("#paragrafF").dblclick(function () {
+                $(this).css("border", "solid 3px black");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p id="paragrafF">Praktikum Minggu ke-4 JQuery</p>
+</body>
+
+</html>
