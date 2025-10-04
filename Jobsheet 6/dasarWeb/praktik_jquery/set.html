@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                alert($("#test1").text("<b>hello world</b>"));
+            });
+            $("#btn2").click(function () {
+                alert($("#test2").html("<b>hello world</b>"));
+            });
+            $("#btn3").click(function () {
+                alert($("#test3").val("Polinema"));
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p id="test1">ini paragraf</p>
+    <p id="test2"><b>ini paragraf</b></p>
+    <p>Namamu <input type="text" id="test3" value="ini input">
+    </p>
+    <button id="btn1">set Text</button>
+    <button id="btn2">set HTML</button>
+    <button id="btn3">set Value</button>
+</body>
+
+</html>
