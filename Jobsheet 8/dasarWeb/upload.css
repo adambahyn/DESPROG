@@ -1,0 +1,84 @@
+.upload-form-container{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.file-input-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 20px 0;
+}
+
+.file-input {
+    display: none;
+}
+
+.file-label {
+    background: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Styling untuk tombol unggah */
+.upload-button {
+    /* Warna latar belakang: turquoise */
+    background: #2ecc71; 
+    /* Warna teks: putih */
+    color: #fff;
+    /* Jarak di dalam tombol */
+    padding: 10px 20px;
+    /* Menghilangkan border */
+    border: none;
+    /* Sudut membulat */
+    border-radius: 5px;
+    /* Mengubah kursor saat diarahkan */
+    cursor: pointer;
+    /* Opasitas awal untuk menunjukkan keadaan "ready" atau sedikit buram */
+    opacity: 1; /* Diubah dari 0.5 ke 1 agar lebih jelas. Opacity 0.5 bisa diterapkan di state :disabled */
+    /* Transisi untuk efek halus saat hover/disabled */
+    transition: background 0.3s, opacity 0.3s, cursor 0.3s;
+    /* Menampilkan sebagai blok inline agar ukuran padding berfungsi */
+    display: inline-block;
+    /* Ukuran font */
+    font-size: 16px;
+}
+
+/* Efek saat tombol di-hover (diarahkan kursor) */
+.upload-button:hover:not(:disabled) {
+    background: #27ae60; /* Warna sedikit lebih gelap saat hover */
+}
+
+/* Styling saat tombol dinonaktifkan (disabled) */
+.upload-button:disabled {
+    /* Warna latar belakang yang lebih terang/netral */
+    background: #ccc; 
+    /* Mengubah tampilan kursor menjadi not-allowed */
+    cursor: not-allowed; 
+    /* Opasitas lebih rendah untuk menunjukkan tidak aktif */
+    opacity: 0.6;
+}
+
+/* Styling untuk area yang menampilkan status unggahan (sukses/gagal/progress) */
+.upload-status {
+    /* Jarak dari elemen di atasnya */
+    margin-top: 20px;
+    /* Teks tebal */
+    font-weight: bold;
+    /* Jelas terlihat */
+    min-height: 20px; 
+}
